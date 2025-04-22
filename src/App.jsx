@@ -1,35 +1,46 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+// import { useState } from 'react'
+// import reactLogo from './assets/react.svg'
+// import viteLogo from '/vite.svg'
+// import './App.css'
+// import React from 'react'
+// import Course from './components/Course'
+
+// function App() {
+//   const courseVal = [
+//     {
+//       name: 'Grace Marvin',
+//       title: 'Software Engineer',
+//       company: 'Tech Solutions Inc.',
+//       email: 'grace@marvin.com'
+//     },
+//     {
+//       name: 'Amy Smith',
+//       title: 'Data Scientist',
+//       company: 'Data Insights Ltd.',
+//       email: 'amy@smith.com'
+//     }
+//   ]
+
+//   const [courses, setCourses] = useState(courseVal)
+
+//   return (
+//     <div>
+//       <h1>Courses</h1>
+//       {
+//         courses.map((c) => {
+//           return <Course course={c} setCourses={setCourses} />
+//         })
+//       }
+//     </div>
+//   )
+// }
+
+// export default App
+
+import PetitionPage from "./pages/PetitionPage";
 
 function App() {
-  const [count, setCount] = useState(0)
-
-  return (
-    <>
-      <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
-  )
+  return <PetitionPage />;
 }
 
-export default App
+export default App;
